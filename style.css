@@ -33,6 +33,7 @@ nav .nav-container {
   justify-content: space-between;
   align-items: center;
 }
+
 nav .nav-container .nav-logo {
   width: 30%;
 }
@@ -237,7 +238,7 @@ nav .nav-container .nav-item:hover {
   border-radius: 20px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1240px) {
+@media screen and (max-width: 480px) {
   nav .nav-container .nav-logo img {
     width: 80%;
   }
@@ -256,6 +257,10 @@ nav .nav-container .nav-item:hover {
   }
   nav .nav-container ul.show {
     right: 0;
+  }
+
+  nav .nav-container span {
+    font-size: 14px;
   }
   nav .nav-container ul li {
     margin-bottom: 2rem;
@@ -280,7 +285,7 @@ nav .nav-container .nav-item:hover {
     justify-content: center;
     align-items: center;
     color: #d7d7d9;
-    padding: 0 7rem;
+    padding: 0 4rem;
   }
   .home h1 {
     font-size: 30px;
