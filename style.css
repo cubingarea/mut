@@ -1,0 +1,451 @@
+* {
+  font-family: "Plus Jakarta Sans", "sans-serif";
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #070f2b;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px) brightness(100%);
+  -webkit-backdrop-filter: blur(10px) brightness(100%);
+  background-color: #9f9f9f26;
+  position: fixed;
+  border-bottom: 1px solid #5a5f68;
+  z-index: 10;
+}
+nav span {
+  color: #d7d7d9;
+  font-size: 24px;
+  font-weight: 700;
+}
+nav .nav-container {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container .nav-logo {
+  width: 30%;
+}
+nav .nav-container .nav-logo img {
+  width: 30%;
+}
+nav .nav-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .nav-container ul li {
+  list-style-type: none;
+  font-size: 24px;
+}
+nav .nav-container .hamburger {
+  display: none;
+}
+nav .nav-container .nav-item {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: #d7d7d9;
+  text-decoration: none;
+}
+nav .nav-container .nav-item:hover {
+  color: #fff;
+}
+
+/* Home */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d7d7d9;
+  padding: 0 7rem;
+}
+.home h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.home p {
+  font-size: 24px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+.home .homeButton {
+  height: 50px;
+  width: 250px;
+  background-color: #535c91;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .homeButton:hover {
+  background-color: #1b1a55;
+}
+.home .homeButton a {
+  color: white;
+}
+
+/* Photo */
+.photo {
+  width: 45%;
+  height: 20%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+/* Layanan */
+.layanan {
+  color: #d7d7d9;
+}
+.layanan h1 {
+  margin: 5rem 0 3rem 0;
+}
+.layanan header {
+  padding: 0 5rem;
+}
+
+.layanan-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: auto auto;
+  padding: 2rem;
+}
+
+.layanan-list > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  background-color: #1b1a55;
+}
+
+.layanan-list > div:hover {
+  box-shadow: rgba(83, 82, 88, 0.15) 0px 28px 30px 0px;
+  transform: translateY(-10px);
+}
+
+/* Portofolio */
+.portofolio {
+  color: #d7d7d9;
+}
+.portofolio h1 {
+  margin: 5rem 0 3rem 0;
+}
+.portofolio header {
+  padding: 0 5rem;
+}
+
+.portofolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: auto auto;
+  padding: 2rem;
+}
+
+.portofolio-list > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  background-color: #1b1a55;
+}
+
+.portofolio-list > div:hover {
+  box-shadow: rgba(83, 82, 88, 0.15) 0px 28px 30px 0px;
+  transform: translateY(-10px);
+}
+
+/* Tentang */
+#tentang {
+  margin-top: 5rem;
+}
+.tentang {
+  padding: 0 5rem;
+  color: #d7d7d9;
+  font-size: 24px;
+}
+
+/* Visi Misi */
+#visiMisi {
+  margin-top: 5rem;
+}
+.visiMisi {
+  padding: 0 5rem;
+  color: #d7d7d9;
+  font-size: 24px;
+}
+
+/*contact*/
+#contact {
+  margin-top: 5rem;
+}
+
+.contact {
+  padding: 0 5rem;
+  color: #d7d7d9;
+}
+
+.contact p {
+  font-size: 24px;
+}
+.contact a {
+  font-size: 24px;
+  color: #d7d7d9;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
+  grid-template-rows: repeat(2, auto); /* Membuat 2 baris */
+  gap: 1rem;
+  margin: auto auto;
+  padding: 2rem;
+}
+
+.contact-list > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  background-color: #1b1a55;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 412px) and (max-width: 1240px) {
+  nav .nav-container .nav-logo img {
+    width: 80%;
+  }
+  nav .nav-container ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 1000px;
+    background-color: #535c91;
+    transition: right 0.3s ease;
+    z-index: 20;
+    padding-top: 2rem;
+  }
+  nav .nav-container ul.show {
+    right: 0;
+  }
+  nav .nav-container ul li {
+    margin-bottom: 2rem;
+  }
+  nav .nav-container .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  nav .nav-container .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #d7d7d9;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d7d7d9;
+    padding: 0 7rem;
+  }
+  .home h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .home p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+  }
+  .home .homeButton {
+    height: 50px;
+    width: 250px;
+    background-color: #535c91;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .homeButton:hover {
+    background-color: #1b1a55;
+  }
+  .home .homeButton a {
+    color: white;
+  }
+
+  /* Photo */
+  .photo {
+    width: 80%;
+    height: 20%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  /* Layanan */
+  .layanan {
+    color: #d7d7d9;
+  }
+  .layanan h1 {
+    margin: 5rem 0 3rem 0;
+  }
+  .layanan header {
+    padding: 0 2rem;
+  }
+
+  .layanan-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: auto auto;
+    padding: 2rem;
+  }
+
+  .layanan-list > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #1b1a55;
+  }
+
+  .layanan-list > div:hover {
+    box-shadow: rgba(83, 82, 88, 0.15) 0px 28px 30px 0px;
+    transform: translateY(-10px);
+  }
+
+  /* Portofolio */
+  .portofolio {
+    color: #d7d7d9;
+  }
+  .portofolio h1 {
+    margin: 5rem 0 3rem 0;
+  }
+  .portofolio header {
+    padding: 0 2rem;
+  }
+
+  .portofolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: auto auto;
+    padding: 2rem;
+  }
+
+  .portofolio-list > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #1b1a55;
+  }
+
+  .portofolio-list > div:hover {
+    box-shadow: rgba(83, 82, 88, 0.15) 0px 28px 30px 0px;
+    transform: translateY(-10px);
+  }
+
+  /* Tentang */
+  #tentang {
+    margin-top: 5rem;
+  }
+  .tentang {
+    padding: 0 2rem;
+    color: #d7d7d9;
+    font-size: 18px;
+  }
+
+  /* Visi Misi */
+  #visiMisi {
+    margin-top: 5rem;
+  }
+  .visiMisi {
+    padding: 0 2rem;
+    color: #d7d7d9;
+    font-size: 18px;
+  }
+
+  /*contact*/
+  #contact {
+    margin-top: 5rem;
+  }
+
+  .contact {
+    padding: 0 2rem;
+    color: #d7d7d9;
+  }
+  .contact h2 {
+    font-size: 18px;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+  .contact a {
+    font-size: 14px;
+    color: #d7d7d9;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto auto;
+    padding: 1rem;
+  }
+
+  .contact-list > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #1b1a55;
+    border-radius: 20px;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitra Usaha Teknik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #070f2b;
+      }
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a class="nav-logo" href="/">
+          <img src="img/mut-removebg-preview.png" alt="Logo" />
+        </a>
+        <span>Mitra Usaha Teknik</span>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="show">
+          <li><a href="#home" class="nav-item">Beranda</a></li>
+          <li><a href="#layanan" class="nav-item">Layanan</a></li>
+          <li><a href="#portofolio" class="nav-item">Portofolio</a></li>
+          <li><a href="#tentang" class="nav-item">Tentang</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="home">
+        <center>
+          <h1>Mitra Usaha Teknik</h1>
+          <p>
+            CV. MITRA USAHA TEKNIK merupakan perusahaan yang telah berdiri sejak
+            tahun 2012, bergerak di bidang jasa pemeliharaan mesin pembangkit,
+            manajemen perawatan alat berat, perdagangan, kontrator dan supplier.
+          </p>
+          <div class="homeButton rounded"><a href="#photo">Lihat Kami</a></div>
+        </center>
+      </div>
+    </section>
+    <section id="photo">
+      <center>
+        <div class="photo">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/mut-removebg-preview.png"
+                  class="d-block w-100"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/mut-removebg-preview.png"
+                  class="d-block w-100"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/mut-removebg-preview.png"
+                  class="d-block w-100"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </center>
+    </section>
+    <section id="layanan">
+      <div class="layanan">
+        <header>
+          <h1>Layanan yang ditawarkan</h1>
+          <hr />
+        </header>
+        <div class="layanan-list">
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <h5>Perawatan dan Perbaikan Genset</h5>
+          </div>
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <h5>Perawatan dan Perbaikan Alat Berat</h5>
+          </div>
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <h5>Suplai Suku Cadang Permesinan dan Barang Elektronik</h5>
+          </div>
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <h5>Suplai Jasa</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portofolio">
+      <div class="portofolio">
+        <header>
+          <h1>Portofolio Kami</h1>
+          <hr />
+        </header>
+        <div class="portofolio-list">
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <div class="text-list">
+              <h3>Perbaikan Mesin Pembangkit</h3>
+              <p>
+                CV. MITRA USAHA TEKNIK bekerja sama dengan PT. PERTAMINA EP
+                untuk perbaikan mesin genset di Klamono, Sorong pada tahun 2022
+                hingga saat ini.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <div class="text-list">
+              <h3>Suplai Barang, Mesin, dan Suku Cadang</h3>
+              <p>
+                CV. MITRA USAHA TEKNIK juga menawarkan suplai barang elektronik,
+                mesin, dan suku cadang. Beberapa perusahaan yang telah bekerja
+                sama di antaranya PT. Pertamina EP, PT Trakindo Utama, BPOM
+                Sofif.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/mut-removebg-preview.png" alt="" srcset="" />
+            <div class="text-list">
+              <h3>Perawatan dan Perbaikan Alat Berat</h3>
+              <p>
+                CV. MITRA USAHA TEKNIK juga menawarkan layanan perbaikan alat
+                berat. Seperti halnya kasus hidrolik yg sudah bocor, kerusakan
+                kontroller pengatur alat berat, hingga perbaikan kerusakan mesin
+                bisa dilakukan oleh teknisi CV. MITRA USAHA TEKNIK
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tentang">
+      <div class="tentang">
+        <header>
+          <h1>Tentang Kami</h1>
+          <hr />
+        </header>
+        <p>
+          CV. MITRA USAHA TEKNIK merupakan perusahaan yang telah berdiri sejak
+          tahun 2012, bergerak di bidang jasa pemeliharaan mesin pembangkit,
+          manajemen perawatan alat berat, perdagangan, kontrator dan supplier
+          yang beralamat di Jl. Toddopuli 10, Kompleks Grand Sulawesi Blok D No.
+          21B, Borong Kota Makassar.
+        </p>
+        <p>
+          Didukung oleh para tenaga ahli yang berpengalaman, khususnya dalam
+          jasa penunjang pertambangan dan konstruksi bangunan, menjadikan CV.
+          MITRA USAHA TEKNIK menjadi sebuah mitra kerja yang handal dan
+          berkualitas.
+        </p>
+        <p>
+          Selama bertahun-tahun CV. MITRA USAHA TEKNIK telah dipercaya menjadi
+          supplier utama penyediaan alat berat, alat komunikasi, mesin kapal,
+          spare part, dan jasa perbaikan dan perawatan aset. Perusahaan yang
+          sudah bekerjasama dengan kami antara lain PT. Trakindo Utama, PT.
+          Pertamina, PT. Epiroc, dan beberapa perusahaan nasional lainnya.
+        </p>
+        <p>
+          Sebagai manifestasi rasa syukur atas segala yang telah diraih, tidak
+          lupa CV. MITRA USAHA TEKNIK juga ikut serta dalam membangun dan
+          mewujudkan Good Corporate Governance, dimana kami menjalankan tata
+          Kelola perusahaan yang baik seusai etika bisnis dan etika kerja.
+        </p>
+      </div>
+    </section>
+    <section id="visiMisi">
+      <div class="visiMisi">
+        <header>
+          <h1>Visi & Misi Perusahaan</h1>
+          <hr />
+        </header>
+        <h3>Visi Perusahaan</h3>
+        <p>Menjadi perusahaan penunjang yang handal, berkualitas dan terpercaya serta turut membangun dan memperbaiki setiap aspek kehidupan bangsa.</p>
+        <h3>Misi Perusahaan</h3>
+        <ul>
+          <li>Menyediakan jasa pelayanan terbaik, memberikan informasi yang lengkap dan akurat.</li>
+          <li>Melayani dengan amanah dan bertanggung jawab, tepat jumlah dan tepat waktu, mengutamakan kepuasan dengan harga yang kompetitif.</li>
+          <li>Memberi nilai lebih untuk mendukung pengembangan perusahaan dan memberikan profit yang memuaskan bagi perusahaan.</li>
+          <li>Membangun citra, mengembanggkan profesionalisme usaha berdasarkan prinsip-prinsip Good Corporate Governance, manajemen kesehatan dan keselamatan kerja (K3) serta pelestarian lingkungan.</li>
+        <li>Menjalin kemitraan kerjasama kepada seluruh pihak terkait yang mendukung usaha dan saling menguntungkan.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <header>
+                <h1>Kontak Kami</h1>
+                <hr />
+            </header>
+            <div class="contact-list">
+                <div><h2>Telepon</h2><p>Syahrir | 081315359315 / 0411-8953815</p></div>
+                <div><h2>Email</h2><a href="mailto:mitra.uteknik@gmail.com">mitra.uteknik@gmail.com</a></div>
+                <div><h2>Alamat</h2><p>Jl. Toddopuli 10, Kompleks Grand Sulawesi Blok D No. 21B, Borong Kota Makassar, 90233</p></div>
+                <div><h2>Jam Kerja</h2><p>Senin - Jumat: 08.00 - 17.00 WI</p></div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
