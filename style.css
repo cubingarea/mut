@@ -64,9 +64,6 @@ nav .nav-container .nav-item {
   color: #d7d7d9;
   text-decoration: none;
 }
-nav .nav-container a.nav-item {
-  font-size: 18px;
-}
 nav .nav-container .nav-item:hover {
   color: #fff;
 }
