@@ -291,9 +291,9 @@ footer {
     right: 0;
     display: block;
   }
-
-  nav .nav-container span {
-    font-size: 14px;
+  nav span {
+    font-weight: 700;
+    font-size: 18px;
   }
   nav .nav-container ul li {
     margin-bottom: 2rem;
